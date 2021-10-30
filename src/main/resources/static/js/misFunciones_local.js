@@ -392,7 +392,8 @@ function actualizarInformacionCliente() {
         idClient: $("#idClient").val(),
         name: $("#name").val(),
         email: $("#email").val(),
-        description: $("#description").val()
+        password: $("#password").val(),
+        age: $("#age").val()
     };
     let datosJson = JSON.stringify(datosCliente);
     $.ajax(
