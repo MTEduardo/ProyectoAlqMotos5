@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="application/json">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Access-Control-Allow-Origin" content="*">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="css/misEstilos.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <title>Proyecto: Alquiler de Moto</title>
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/misFunciones.js"></script>
+        <h1 class="fTitle">Panel Usuario Administrador <img src="userAdmin_logo_xxs.png" align="center"> </h1>
+        <h5> <button onclick="location.href = 'inicio.html'" class="btnStyle mb-2"">.:: Volver al Menú ::.</button> </h5><br>
+        <div class="floatLeft">
+            <button onclick="traerInformacionAdmin()" class="btnStyle mb-2">Listar Usuarios Admin</button><br>
+            <input type="number" id="idAdmin" placeholder="ID Admin" class="form-control inputStyle" readonly="readonly">
+            <input type="text" id="email" placeholder="E-Mail" class="form-control inputStyle">
+            <input type="text" id="password" placeholder="Contraseña" class="form-control inputStyle">
+            <input type="text" id="userName" placeholder="Nombre del Usuario" class="form-control inputStyle"><br>
+            <button onclick="guardarInformacionAdmin()" class="btnStyle mb-2" >Guardar</button><br>
+            <button onclick="actualizarInformacionAdmin()" class="btnStyle mb-2">Actualizar</button><br>
+            <button onclick="limpiarCamposAdmin()" class="btnStyle mb-2">Limpiar</button><br>
+            <br><br>
+        </div>
+        <div id="resultado"></div>
+    </body>
+</html>

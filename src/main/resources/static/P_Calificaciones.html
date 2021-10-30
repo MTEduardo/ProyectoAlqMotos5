@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="application/json">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Access-Control-Allow-Origin" content="*">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="css/misEstilos.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <title>Proyecto: Alquiler de Moto</title>
+    </head>
+    <body onload="listarReservaciones()">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/misFunciones.js"></script>
+        <h1 class="fTitle">Panel Calificación de Reservas <img src="score_logo_xxs.png" align="center"> </h1>
+        <h5> <button onclick="location.href = 'inicio.html'" class="btnStyle mb-2"">.:: Volver al Menú ::.</button> </h5><br>
+        <div class="floatLeft">
+            <button onclick="traerInformacionScore()" class="btnStyle mb-2">Listar Calificaciones de Reservas</button><br>
+            <input type="number" id="idScore" placeholder="ID Score" class="form-control inputStyle" readonly="readonly">
+            <select name="ScoreSelect" id="stars" class="form-control inputStyle" required>
+                <option value="-1">Calificación</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <input type="text" id="messageText" placeholder="Mensaje" class="form-control inputStyle">
+            <select id="reservationList" class="form-control inputStyle" required></select><br>
+            <button onclick="guardarInformacionScore()" class="btnStyle mb-2" >Guardar</button><br>
+            <button onclick="actualizarInformacionScore()" class="btnStyle mb-2">Actualizar</button><br>
+            <button onclick="limpiarCamposScore()" class="btnStyle mb-2">Limpiar</button><br>
+            <br><br>
+        </div>
+        <div id="resultado"></div>
+    </body>
+</html>
